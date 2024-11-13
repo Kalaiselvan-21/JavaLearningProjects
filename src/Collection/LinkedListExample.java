@@ -18,14 +18,14 @@ public class LinkedListExample {
         linkedlist.add(9);
         System.out.println(linkedlist);
 
-        linkedlist.addFirst(1);
+        ((LinkedList<Integer>) linkedlist).addFirst(1);
         System.out.println("After adding 1st element in linked list: "+linkedlist);
-        linkedlist.addLast(10);
+        ((LinkedList<Integer>) linkedlist).addLast(10);
         System.out.println("After adding last element in linked list: "+linkedlist);
 
         //Retrieving Operation
         System.out.println("3rd Index Element in the list: "+linkedlist.get(4));
-        System.out.println("Get the first index element: "+linkedlist.getFirst());
+        System.out.println("Get the first index element: "+((LinkedList<Integer>) linkedlist).getFirst());
 
         //Removal operation
         linkedlist.remove(3);
