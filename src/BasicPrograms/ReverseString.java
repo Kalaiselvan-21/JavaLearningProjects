@@ -15,6 +15,8 @@ public class ReverseString {
             reversed=reversed+array[i];
 
         }System.out.println("Reversed String: "+reversed);
+        
+        ////////////////////////////////
 
         System.out.println("******************");
         System.out.println("Using collections");
@@ -26,11 +28,11 @@ public class ReverseString {
 
         ListIterator<Character> iterator = characterList.listIterator();
         while(iterator.hasNext()) {
-            System.out.println(iterator.next());
+            System.out.print(iterator.next());
         }
         System.out.println("Reverse Iteration: ");
         while(iterator.hasPrevious()){
-            System.out.println(iterator.previous());
+            System.out.print(iterator.previous());
         }
 
     }
